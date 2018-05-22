@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>multi-page-vue</title>
+  <style>
+    .pages-wrap {
+      width: 80%;
+      margin: 30px auto;
+    }
+
+    .pages-content {
+      border-top: 1px solid #ddd;
+    }
+
+    .pages-content ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .pages-content li {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      border-bottom: 1px solid rgb(240, 238, 238);
+
+    }
+
+    .pages-content li a {
+      font-size: 24px;
+      line-height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div class="pages-wrap">
+    <div class="pages-content">{pageList}</div>
+  </div>
+</body>
+
+</html>
